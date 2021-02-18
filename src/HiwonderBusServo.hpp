@@ -126,7 +126,7 @@ public:
 	/// @arg newId: the new ID to be set.
 	void idWrite(uint8_t newId);
 	
-	/// Read the id from the servo. This alway uses broadcast (why to read the id if you know it?)
+	/// Read the id from the servo. This alway uses broadcast (why to read the id if you know it? I believe this function is intended for when you have 1 servo attached to the Raspberry Pi and are SETTING the id number so it can replace an existing servo, after installation)
 	uint8_t idRead() const;
 	
 	/// The angle offset is an adjustment on the position (homing).
